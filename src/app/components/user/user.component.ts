@@ -15,7 +15,6 @@ export class UserComponent implements OnInit {
   hobbies:string[];
   hello:any;
 
-
   constructor() {
       console.log('contructor...');
   }
@@ -44,6 +43,7 @@ export class UserComponent implements OnInit {
         return false;
     }
 
+
     deletehobby(hobby){
         console.log(hobby);return false;
         for(let i=0; i < this.hobbies.length;i++){
@@ -54,9 +54,9 @@ export class UserComponent implements OnInit {
     }
 
     interface Address{
-    street:string,
-    city:string,
-    state:string,
-}
+        street:string,
+        city:string,
+        state:string,
+    }
 
 }
